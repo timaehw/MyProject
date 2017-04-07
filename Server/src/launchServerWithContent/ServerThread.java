@@ -22,15 +22,21 @@ public class ServerThread extends Thread {
             ServerProtocol srv = new ServerProtocol();
             outputLine = srv.processInput(null);
             out.println(outputLine);
-            while ((inputLine = in.readLine()) != null) {
-                outputLine = srv.processInput(inputLine);
+            while ((inputLine = in.readLine()) != null){
+            	outputLine = srv.processInput(inputLine);
                 out.println(outputLine);
+            
                 if (outputLine.equals("Bye"))
                     break;
             }
-            socket.close();
         } catch (IOException e) {
-            e.printStackTrace();
-        }
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        try {
+			socket.close();
+		} catch (IOException e) {
+ 			e.printStackTrace();
+		}
     }
 }
