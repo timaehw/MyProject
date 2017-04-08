@@ -83,7 +83,7 @@ public class ExtendedLauncher implements ActionListener{
         //TabbedPane tp = new TabbedPane();
         addComponentToPane(frame.getContentPane());
         //Display the window.
-        frame.setSize(350,275);
+        frame.setSize(550,275);
         frame.setVisible(true);
     }
  
@@ -96,13 +96,12 @@ public class ExtendedLauncher implements ActionListener{
          try (
             Socket srvSocket = new Socket(hostName, portNumber);
             PrintWriter stdOut = new PrintWriter(new OutputStreamWriter(System.out, CHARSET_NAME));
-            BufferedReader in = new BufferedReader(
-                new InputStreamReader(srvSocket.getInputStream()));
-        ) {
+            BufferedReader in = new BufferedReader(new InputStreamReader(srvSocket.getInputStream()));	 
+        		 ) {
              out = new PrintWriter(srvSocket.getOutputStream(), true);
             BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
             String fromServer;
-            String fromUser;
+            //String fromUser;
             f1 = new File(p1.toString());
             fw = new FileWriter(p1.toString());
             bw = new BufferedWriter(fw);
@@ -112,7 +111,9 @@ public class ExtendedLauncher implements ActionListener{
                 bw.newLine();
                 setUI(fromServer);
                 setUI(newLine);
-            
+                if(fromServer.equals("Music yet to be implemented")){
+                	
+                }
                 if (fromServer.equals("Bye.")){
                  	bw.close();
                 	fw.close();
@@ -121,14 +122,13 @@ public class ExtendedLauncher implements ActionListener{
                 	out.close();
                 	srvSocket.close();
                 	break;
-            }	
-                fromUser = stdIn.readLine();
+            }
+                 /*fromUser = stdIn.readLine();
+                
                 if (fromUser != null) {
                     System.out.println("Client: " + fromUser);
                     out.println(fromUser);
-                }		
-
-                
+                }	*/	
             } 	
         } catch (UnknownHostException e) {
             System.err.println("Don't know about host " + hostName);

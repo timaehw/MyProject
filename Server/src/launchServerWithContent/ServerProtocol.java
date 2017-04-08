@@ -1,55 +1,65 @@
 package launchServerWithContent;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.net.Socket;
+
+import javax.sound.sampled.AudioFileFormat;
+import javax.sound.sampled.AudioFormat;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
 	public class ServerProtocol {
-	    private static final int WAITING = 0;
-	    private static final int SENTKNOCKKNOCK = 1;
-	    private static final int SENTCLUE = 2;
-	    private static final int ANOTHER = 3;
-	    private static final int NUMJOKES = 5;
-	    private int state = WAITING;
-	    private int currentJoke = 0;
-	    private String[] clues = { "Turnip", "Little Old Lady", "Atch", "Who", "Who" };
-	    private String[] answers = { "Turnip the heat, it's cold in here!",
-	                                 "I didn't know you could yodel!",
-	                                 "Bless you!",
-	                                 "Is there an owl in here?",
-	                                 "Is there an echo in here?" };
-	    public String processInput(String theInput) {
-	        String theOutput = null;
-	        if (state == WAITING) {
-	            theOutput = "Knock! Knock!";
-	            state = SENTKNOCKKNOCK;
-	        } else if (state == SENTKNOCKKNOCK) {
-	            if (theInput.equalsIgnoreCase("Who's there?")) {
-	                theOutput = clues[currentJoke];
-	                state = SENTCLUE;
-	            } else {
-	                theOutput = "You're supposed to say \"Who's there?\"! " +
-	                "Try again. Knock! Knock!";
-	            }
-	        } else if (state == SENTCLUE) {
-	            if (theInput.equalsIgnoreCase(clues[currentJoke] + " who?")) {
-	                theOutput = answers[currentJoke] + " Want another? (y/n)";
-	                state = ANOTHER;
-	            } else {
-	                theOutput = "You're supposed to say \"" + 
-	                clues[currentJoke] + 
-	                " who?\"" + 
-	                "! Try again. Knock! Knock!";
-	                state = SENTKNOCKKNOCK;
-	            }
-	        } else if (state == ANOTHER) {
-	            if (theInput.equalsIgnoreCase("y")) {
-	                theOutput = "Knock! Knock!";
-	                if (currentJoke == (NUMJOKES - 1))
-	                    currentJoke = 0;
-	                else
-	                    currentJoke++;
-	                state = SENTKNOCKKNOCK;
-	            } else {
-	                theOutput = "Bye.";
-	                state = WAITING;
-	            }
-	        }
-	        return theOutput;
-	    }
-	}
+		  private static final int WAITING = 0;
+ 		    private static final int NEXTCOMMAND = 1;
+		    private static final int TEXT = 2;
+		    private static final int MUSIC = 3;
+		    private static final int QUIT = 4;
+		    private int state = WAITING;
+			private OutputStream out;
+			private Socket socket;
+ 
+		    public ServerProtocol(Socket socket, OutputStream out) {
+		    	this.socket = socket;
+		    	this.out = out;
+		    }
+
+			public String processInput(String theInput) {
+		        String theOutput = null;
+		        if(state == WAITING){
+		        	theOutput = "Welcome to the server, please use 'Text', 'Music' or 'Quit / exit'";
+		        	state = NEXTCOMMAND;
+		        }else if(state == NEXTCOMMAND){
+		        	if(theInput.equalsIgnoreCase("Quit")|| theInput.equalsIgnoreCase("exit")){
+		        		theOutput = "Quitting Server, please hit enter";
+		        		state = QUIT;
+		        	}else if(theInput.equalsIgnoreCase("Music")){
+ 		        		theOutput = "Press enter to go to Music mode";
+		        		state = MUSIC;
+		        	}else if(theInput.equalsIgnoreCase("Text")){
+ 		        		theOutput = "Entering echo mode, use quit or exit to leave.";
+		        		state = TEXT;
+		        	}else{
+		        		theOutput = "Please use one of the commands";
+		        		state = NEXTCOMMAND;
+		        	}
+		        }else if(state == TEXT){
+ 		        	if(theInput.equalsIgnoreCase("quit") || theInput.equalsIgnoreCase("exit")){
+		        		theOutput = "";
+ 		        		state = NEXTCOMMAND;
+		        	}else{
+		        		theOutput = theInput;
+		        	}
+		        }else if(state == MUSIC){
+		        	theOutput = "Music yet to be implemented";
+	 
+		        	state = NEXTCOMMAND;
+		        }else if(state == QUIT){
+		        	theOutput = "Bye.";
+		        }
+ 		        return theOutput;
+		    }
+		}
+	
+	
