@@ -1,29 +1,25 @@
 package launchServerWithContent;
 
+import java.io.BufferedInputStream;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.io.PrintWriter;
 import java.net.Socket;
-
-import javax.sound.sampled.AudioFileFormat;
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
 	public class ServerProtocol {
 		  private static final int WAITING = 0;
  		    private static final int NEXTCOMMAND = 1;
 		    private static final int TEXT = 2;
 		    private static final int MUSIC = 3;
 		    private static final int QUIT = 4;
+		    private static final int STREAM = 5;
 		    private int state = WAITING;
-			private OutputStream out;
-			private Socket socket;
- 
-		    public ServerProtocol(Socket socket, OutputStream out) {
+ 			Socket socket;
+			public boolean finished = false;
+		    public ServerProtocol(Socket socket) {
 		    	this.socket = socket;
-		    	this.out = out;
-		    }
+ 		    }
 
 			public String processInput(String theInput) {
 		        String theOutput = null;
@@ -40,9 +36,14 @@ import javax.sound.sampled.AudioSystem;
 		        	}else if(theInput.equalsIgnoreCase("Text")){
  		        		theOutput = "Entering echo mode, use quit or exit to leave.";
 		        		state = TEXT;
+		        	}else if(theInput.equalsIgnoreCase("Streaming")){
+		        		theOutput = "streaming";
 		        	}else{
 		        		theOutput = "Please use one of the commands";
-		        		state = NEXTCOMMAND;
+		        		if(finished == true){
+		        		state = WAITING;
+		        		System.out.println("Finished!");
+		        		}
 		        	}
 		        }else if(state == TEXT){
  		        	if(theInput.equalsIgnoreCase("quit") || theInput.equalsIgnoreCase("exit")){
@@ -52,11 +53,14 @@ import javax.sound.sampled.AudioSystem;
 		        		theOutput = theInput;
 		        	}
 		        }else if(state == MUSIC){
-		        	theOutput = "Music yet to be implemented";
-	 
-		        	state = NEXTCOMMAND;
+		        	theOutput = "File now streaming";
+		        	if(theInput.equalsIgnoreCase("Quit")){
+			        	state = NEXTCOMMAND;	
+		        	}
 		        }else if(state == QUIT){
 		        	theOutput = "Bye.";
+		        }else if(state == STREAM){
+		        	
 		        }
  		        return theOutput;
 		    }

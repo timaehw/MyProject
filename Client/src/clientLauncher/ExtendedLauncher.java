@@ -5,11 +5,15 @@ import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
@@ -18,6 +22,11 @@ import java.net.UnknownHostException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import javax.sound.sampled.AudioFormat;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.DataLine;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -42,12 +51,18 @@ public class ExtendedLauncher implements ActionListener{
     public JTextArea serverResponses = new JTextArea();
     public JScrollPane jsp = new JScrollPane(serverResponses);
     public PrintWriter out;
+    public JButton JButton1 = new JButton("Text");
+    public JButton JButton2 = new JButton("Music");
+    public JButton JButton3 = new JButton("Quit");
+    public JButton JButton4 = new JButton("Streaming");
+    private String musicFileName = "/home/timmeh/workspace/Client/musicFile.wav";
+	int size = 400000;
   	public ExtendedLauncher(){
 		run();
 	}
     
     public void addComponentToPane(Container pane) {
-        JTabbedPane tabbedPane = new JTabbedPane();
+        final JTabbedPane tabbedPane = new JTabbedPane();
         serverResponses.setText("Server Repsonses: " + newLine);
         //Create the "cards".
         JPanel card2 = new JPanel(new BorderLayout()) {
@@ -60,14 +75,46 @@ public class ExtendedLauncher implements ActionListener{
         };
         JPanel card1 = new JPanel(new GridLayout(2,2));
         serverResponses.setEditable(false);
-        card1.add(new JButton("Button 1"));
-        card1.add(new JButton("Button 2"));
-        card1.add(new JButton("Button 3"));
+        card1.add(JButton1);
+        card1.add(JButton2);
+        card1.add(JButton4);
+        card1.add(JButton3);
         card2.add(jsp, BorderLayout.CENTER);
         card2.add(clientInput, BorderLayout.AFTER_LAST_LINE);
         tabbedPane.addTab(BUTTONPANEL, card1);
         tabbedPane.addTab(TEXTPANEL, card2);
         clientInput.addActionListener(this);
+        JButton1.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				out.println("text");
+				tabbedPane.setSelectedIndex(1);
+				clientInput.requestFocus();
+			}
+		});
+        JButton2.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				out.println("music");
+				tabbedPane.setSelectedIndex(1);
+				clientInput.requestFocus();
+			}
+		});
+        JButton3.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				out.println("exit");
+			}
+		});
+        JButton4.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				out.println("streaming");
+			}
+		});
         pane.add(tabbedPane, BorderLayout.CENTER);
     }
     /**
@@ -95,7 +142,7 @@ public class ExtendedLauncher implements ActionListener{
 		createAndShowGUI();
          try (
             Socket srvSocket = new Socket(hostName, portNumber);
-            PrintWriter stdOut = new PrintWriter(new OutputStreamWriter(System.out, CHARSET_NAME));
+//            PrintWriter stdOut = new PrintWriter(new OutputStreamWriter(System.out, CHARSET_NAME));
             BufferedReader in = new BufferedReader(new InputStreamReader(srvSocket.getInputStream()));	 
         		 ) {
              out = new PrintWriter(srvSocket.getOutputStream(), true);
@@ -111,8 +158,36 @@ public class ExtendedLauncher implements ActionListener{
                 bw.newLine();
                 setUI(fromServer);
                 setUI(newLine);
-                if(fromServer.equals("Music yet to be implemented")){
-                	
+                if(fromServer.equals("File now streaming")){
+                	byte[] buf = new byte[size];
+                	InputStream isn = null;
+                	try{
+                		isn = srvSocket.getInputStream();
+                	}catch(IOException io2){
+                		io2.printStackTrace();
+                	}
+                	FileOutputStream fos = null;
+                	try{
+                		fos = new FileOutputStream(musicFileName);
+                	}catch(FileNotFoundException fnfe1){
+                		fnfe1.printStackTrace();
+                	}
+                 	try{
+                		while(true){
+                			int x = isn.read(buf);
+                			if(x == -1){
+                				break;
+                			}fos.write(buf,0,x);
+                			fos.flush();
+                		}
+                		fos.close();
+                		
+                		
+                	}catch(IOException e){
+                		e.printStackTrace();
+                	}
+                	setUI("Playing Track");
+            		play();
                 }
                 if (fromServer.equals("Bye.")){
                  	bw.close();
@@ -120,6 +195,7 @@ public class ExtendedLauncher implements ActionListener{
                 	stdIn.close();
                 	in.close();
                 	out.close();
+                	
                 	srvSocket.close();
                 	break;
             }
@@ -139,6 +215,10 @@ public class ExtendedLauncher implements ActionListener{
             System.exit(0);
         }
     }
+
+	private void play() {
+		new AePlayWave(musicFileName).start();
+	}
 
 	@Override
 	public void actionPerformed(ActionEvent arg0) {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="21" version="2.0">
+<workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
-<window height="775" maximized="true" width="1165" x="638" y="71">
+<window height="771" maximized="true" width="1163" x="60" y="59">
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.eclipse.ui.console.ConsoleView"/>
 <orientation position="512" view="org.eclipse.debug.ui.VariableView"/>
@@ -41,7 +41,6 @@
 <part id="4"/>
 <part id="5"/>
 <part id="6"/>
-<part id="7"/>
 </presentation>
 </folder>
 </info>
@@ -52,30 +51,26 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExtendedLauncher.java" partName="ExtendedLauncher.java" path="/home/timmeh/workspace/Client/src/clientLauncher/ExtendedLauncher.java" title="ExtendedLauncher.java" tooltip="Client/src/clientLauncher/ExtendedLauncher.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/clientLauncher/ExtendedLauncher.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5265" selectionTopPixel="238"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3979" selectionTopPixel="1393"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LaunchClient.java" partName="LaunchClient.java" path="/home/timmeh/workspace/Client/src/clientLauncher/LaunchClient.java" title="LaunchClient.java" tooltip="Client/src/clientLauncher/LaunchClient.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Client/src/clientLauncher/LaunchClient.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="51" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="168" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServerThread.java" partName="ServerThread.java" path="/home/timmeh/workspace/Server/src/launchServerWithContent/ServerThread.java" title="ServerThread.java" tooltip="Server/src/launchServerWithContent/ServerThread.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServerThread.java" partName="ServerThread.java" path="/home/timmeh/workspace/Server/src/launchServerWithContent/ServerThread.java" title="ServerThread.java" tooltip="Server/src/launchServerWithContent/ServerThread.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Server/src/launchServerWithContent/ServerThread.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="47" selectionOffset="965" selectionTopPixel="162"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="588" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServerProtocol.java" partName="ServerProtocol.java" path="/home/timmeh/workspace/Server/src/launchServerWithContent/ServerProtocol.java" title="ServerProtocol.java" tooltip="Server/src/launchServerWithContent/ServerProtocol.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServerProtocol.java" partName="ServerProtocol.java" path="/home/timmeh/workspace/Server/src/launchServerWithContent/ServerProtocol.java" title="ServerProtocol.java" tooltip="Server/src/launchServerWithContent/ServerProtocol.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Server/src/launchServerWithContent/ServerProtocol.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2286" selectionTopPixel="477"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="570" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="BufferedReader.class" partName="BufferedReader.class" path="/tmp/BufferedReader.class9129403309491784194.class" title="BufferedReader.class" tooltip="java.io.BufferedReader" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=Client/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.io(BufferedReader.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DecodeAndPlayVideo.java" partName="DecodeAndPlayVideo.java" path="/home/timmeh/workspace/Server/src/launchServerWithContent/DecodeAndPlayVideo.java" title="DecodeAndPlayVideo.java" tooltip="Server/src/launchServerWithContent/DecodeAndPlayVideo.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Server/src/launchServerWithContent/DecodeAndPlayVideo.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="38" selectionOffset="1937" selectionTopPixel="840"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="StreamDecoder.class" partName="StreamDecoder.class" path="/tmp/StreamDecoder.class7693771920421927648.class" title="StreamDecoder.class" tooltip="sun.nio.cs.StreamDecoder" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=Client/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;sun.nio.cs(StreamDecoder.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="SocketInputStream.class" partName="SocketInputStream.class" path="/tmp/SocketInputStream.class1972419689080222262.class" title="SocketInputStream.class" tooltip="java.net.SocketInputStream" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=Client/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.net(SocketInputStream.class"/>
+<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="JNILibrary.class" partName="JNILibrary.class" path="/tmp/JNILibrary.class3750813780816404717.class" title="JNILibrary.class" tooltip="com.xuggle.ferry.JNILibrary" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=Server/\/home\/timmeh\/Downloads\/xuggle-xuggler-5.4.jar&lt;com.xuggle.ferry(JNILibrary.class"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
@@ -116,9 +111,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Warnings (2 items)"/>
+<category IMemento.internal.id="Warnings (19 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="530" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="451"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -299,7 +292,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.21913044" ratioLeft="252" ratioRight="898" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.2630662" ratioLeft="302" ratioRight="846" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.74960876" ratioLeft="479" ratioRight="160" relationship="4" relative="org.eclipse.ui.editorss">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
@@ -321,7 +314,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@590e0275" ratio="0.66431594" ratioLeft="471" ratioRight="238" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@590e0275" ratio="0.68406963" ratioLeft="511" ratioRight="236" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -411,167 +404,164 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/clientLauncher/ExtendedLauncher.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Client/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.net(SocketInputStream.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Server/src/launchServerWithContent/DecodeAndPlayVideo.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Server/src/launchServerWithContent/ServerThread.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Client/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.io(BufferedReader.class"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Server/src/launchServerWithContent/ServerProtocol.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/clientLauncher/TabbedPane.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Client/src/clientLauncher/LaunchClient.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Server/src/launchServerWithContent/ServerProtocol.java"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Server/\/home\/timmeh\/Downloads\/xuggle-xuggler-2.0.322.jar&lt;com.xuggle.ferry(JNILibraryLoader.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Server/\/home\/timmeh\/Downloads\/xuggle-xuggler-5.4.jar&lt;com.xuggle.ferry(JNILibrary.class"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Server/src/launchServerWithContent/ServerThread.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Client/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.net(SocketInputStream.class"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Client/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;sun.nio.cs(StreamDecoder.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Server/src/launchServerWithContent/ServerProtocol.java"/>
 </editors>
-<item historyLabel="ExtendedLauncher.java" index="0">
-<position/>
+<item historyLabel="DecodeAndPlayVideo.java" index="0">
+<position info="not_deleted" x="717" y="18"/>
 </item>
-<item historyLabel="ExtendedLauncher.java" index="0">
-<position info="not_deleted" x="5301" y="0"/>
+<item historyLabel="DecodeAndPlayVideo.java" index="0">
+<position info="not_deleted" x="1435" y="0"/>
 </item>
-<item historyLabel="SocketInputStream.class" index="1">
+<item historyLabel="DecodeAndPlayVideo.java" index="0">
+<position info="not_deleted" x="1453" y="10"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2295" y="0"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2240" y="0"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2295" y="0"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="441" y="26"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="520" y="0"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2243" y="30"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2275" y="0"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2289" y="3"/>
+</item>
+<item historyLabel="ServerProtocol.java" index="2">
+<position info="not_deleted" x="1559" y="0"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2295" y="0"/>
+</item>
+<item historyLabel="LaunchClient.java" index="3">
+<position info="not_deleted" x="124" y="37"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2295" y="0"/>
+</item>
+<item historyLabel="DecodeAndPlayVideo.java" index="0">
+<position info="not_deleted" x="10005" y="0"/>
+</item>
+<item historyLabel="ServerProtocol.java" index="2">
+<position info="not_deleted" x="570" y="0"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2295" y="0"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2233" y="48"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2227" y="0"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2239" y="6"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2295" y="0"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2289" y="3"/>
+</item>
+<item historyLabel="DecodeAndPlayVideo.java" index="0">
+<position info="not_deleted" x="1672" y="6"/>
+</item>
+<item historyLabel="DecodeAndPlayVideo.java" index="0">
+<position info="not_deleted" x="1861" y="0"/>
+</item>
+<item historyLabel="DecodeAndPlayVideo.java" index="0">
+<position info="not_deleted" x="10004" y="0"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2289" y="3"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2239" y="6"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2294" y="0"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2239" y="6"/>
+</item>
+<item historyLabel="LaunchClient.java" index="3">
+<position info="not_deleted" x="124" y="37"/>
+</item>
+<item historyLabel="ServerProtocol.java" index="2">
+<position info="not_deleted" x="570" y="0"/>
+</item>
+<item historyLabel="DecodeAndPlayVideo.java" index="0">
+<position info="not_deleted" x="10004" y="0"/>
+</item>
+<item historyLabel="DecodeAndPlayVideo.java" index="0">
+<position info="not_deleted" x="1066" y="0"/>
+</item>
+<item historyLabel="DecodeAndPlayVideo.java" index="0">
+<position info="not_deleted" x="1688" y="0"/>
+</item>
+<item historyLabel="ServerProtocol.java" index="2">
+<position info="not_deleted" x="570" y="0"/>
+</item>
+<item historyLabel="JNILibraryLoader.class" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ServerThread.java" index="2">
-<position info="not_deleted" x="833" y="38"/>
+<item historyLabel="ServerProtocol.java" index="2">
+<position info="not_deleted" x="570" y="0"/>
 </item>
-<item historyLabel="BufferedReader.class" index="3">
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2239" y="6"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="2295" y="0"/>
+</item>
+<item historyLabel="ServerThread.java" index="1">
+<position info="not_deleted" x="578" y="0"/>
+</item>
+<item historyLabel="ServerProtocol.java" index="2">
+<position info="not_deleted" x="570" y="0"/>
+</item>
+<item historyLabel="DecodeAndPlayVideo.java" index="0">
+<position info="not_deleted" x="1688" y="0"/>
+</item>
+<item historyLabel="DecodeAndPlayVideo.java" index="0">
+<position info="not_deleted" x="9873" y="0"/>
+</item>
+<item historyLabel="DecodeAndPlayVideo.java" index="0">
+<position info="not_deleted" x="1937" y="38"/>
+</item>
+<item historyLabel="JNILibrary.class" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ServerThread.java" index="2">
-<position info="not_deleted" x="833" y="0"/>
+<item historyLabel="LaunchClient.java" index="3">
+<position info="not_deleted" x="124" y="37"/>
 </item>
-<item historyLabel="ServerProtocol.java" index="4">
-<position info="not_deleted" x="2266" y="0"/>
-</item>
-<item historyLabel="ServerThread.java" index="2">
-<position info="not_deleted" x="833" y="0"/>
-</item>
-<item historyLabel="ServerThread.java" index="2">
-<position info="not_deleted" x="1263" y="0"/>
-</item>
-<item historyLabel="ServerThread.java" index="2">
-<position/>
-</item>
-<item historyLabel="ServerThread.java" index="2">
-<position info="not_deleted" x="815" y="0"/>
-</item>
-<item historyLabel="ServerThread.java" index="2">
-<position info="not_deleted" x="942" y="0"/>
-</item>
-<item historyLabel="TabbedPane.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ServerThread.java" index="2">
-<position info="not_deleted" x="942" y="0"/>
-</item>
-<item historyLabel="LaunchClient.java" index="6">
-<position info="not_deleted" x="51" y="0"/>
-</item>
-<item historyLabel="ExtendedLauncher.java" index="0">
-<position info="not_deleted" x="5260" y="0"/>
-</item>
-<item historyLabel="ExtendedLauncher.java" index="0">
-<position/>
-</item>
-<item historyLabel="ExtendedLauncher.java" index="0">
-<position/>
+<item historyLabel="ServerThread.java" index="6">
+<position info="not_deleted" x="589" y="0"/>
 </item>
 <item historyLabel="ServerProtocol.java" index="7">
-<position/>
+<position info="not_deleted" x="570" y="0"/>
 </item>
-<item historyLabel="ServerProtocol.java" index="7">
-<position/>
-</item>
-<item historyLabel="ExtendedLauncher.java" index="0">
-<position info="not_deleted" x="3159" y="0"/>
-</item>
-<item historyLabel="ServerProtocol.java" index="7">
-<position/>
-</item>
-<item historyLabel="ServerThread.java" index="8">
-<position/>
-</item>
-<item historyLabel="ServerThread.java" index="8">
-<position info="not_deleted" x="1056" y="0"/>
-</item>
-<item historyLabel="ExtendedLauncher.java" index="0">
-<position info="not_deleted" x="3159" y="0"/>
-</item>
-<item historyLabel="ServerProtocol.java" index="7">
-<position/>
-</item>
-<item historyLabel="SocketInputStream.class" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="StreamDecoder.class" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ServerProtocol.java" index="7">
-<position/>
-</item>
-<item historyLabel="ServerProtocol.java" index="7">
-<position info="not_deleted" x="931" y="0"/>
-</item>
-<item historyLabel="ServerThread.java" index="8">
-<position info="not_deleted" x="965" y="47"/>
-</item>
-<item historyLabel="ServerThread.java" index="8">
-<position/>
-</item>
-<item historyLabel="ServerThread.java" index="8">
-<position info="not_deleted" x="1012" y="0"/>
-</item>
-<item historyLabel="ExtendedLauncher.java" index="0">
-<position info="not_deleted" x="3159" y="0"/>
-</item>
-<item historyLabel="SocketInputStream.class" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="StreamDecoder.class" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ServerProtocol.java" index="7">
-<position/>
-</item>
-<item historyLabel="ExtendedLauncher.java" index="0">
-<position info="not_deleted" x="3159" y="0"/>
-</item>
-<item historyLabel="ServerProtocol.java" index="7">
-<position/>
-</item>
-<item historyLabel="ServerThread.java" index="8">
-<position info="not_deleted" x="1012" y="0"/>
-</item>
-<item historyLabel="ServerThread.java" index="8">
-<position info="not_deleted" x="926" y="0"/>
-</item>
-<item historyLabel="ServerProtocol.java" index="7">
-<position/>
-</item>
-<item historyLabel="ExtendedLauncher.java" index="0">
-<position info="not_deleted" x="5265" y="0"/>
-</item>
-<item historyLabel="ServerProtocol.java" index="7">
-<position/>
-</item>
-<item historyLabel="ServerProtocol.java" index="7">
-<position/>
-</item>
-<item historyLabel="ServerProtocol.java" index="7">
-<position/>
-</item>
-<item historyLabel="ServerProtocol.java" index="7">
-<position info="not_deleted" x="1328" y="0"/>
-</item>
-<item historyLabel="ServerProtocol.java" index="7">
-<position info="not_deleted" x="1404" y="0"/>
-</item>
-<item historyLabel="ServerThread.java" index="8">
-<position info="not_deleted" x="965" y="47"/>
-</item>
-<item active="true" historyLabel="ServerProtocol.java" index="7">
-<position/>
+<item active="true" historyLabel="ServerThread.java" index="6">
+<position info="not_deleted" x="589" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -591,50 +581,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TabbedPane.java" tooltip="Client/src/clientLauncher/TabbedPane.java">
-<persistable path="/Client/src/clientLauncher/TabbedPane.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="JNILibrary.class" tooltip="com.xuggle.ferry.JNILibrary">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Server/\/home\/timmeh\/Downloads\/xuggle-xuggler-5.4.jar&lt;com.xuggle.ferry(JNILibrary.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MessageArea.java" tooltip="WhatWhat/src/woo/MessageArea.java">
-<persistable path="/WhatWhat/src/woo/MessageArea.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="JNILibraryLoader.class" tooltip="com.xuggle.ferry.JNILibraryLoader">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Server/\/home\/timmeh\/Downloads\/xuggle-xuggler-2.0.322.jar&lt;com.xuggle.ferry(JNILibraryLoader.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Transactions.java" tooltip="WhatWhat/src/woo/Transactions.java">
-<persistable path="/WhatWhat/src/woo/Transactions.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DecodeAndPlayAudioAndVideo.java" tooltip="Server/src/launchServerWithContent/DecodeAndPlayAudioAndVideo.java">
+<persistable path="/Server/src/launchServerWithContent/DecodeAndPlayAudioAndVideo.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EchoServer.java" tooltip="WhatWhat/src/woo/EchoServer.java">
-<persistable path="/WhatWhat/src/woo/EchoServer.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="InputStreamReader.class" tooltip="java.io.InputStreamReader">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Client/\/usr\/lib\/jvm\/jdk1.8.0_121\/jre\/lib\/rt.jar&lt;java.io(InputStreamReader.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AppWindow.java" tooltip="WhatWhat/src/woo/AppWindow.java">
-<persistable path="/WhatWhat/src/woo/AppWindow.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="FileInputStream.class" tooltip="java.io.FileInputStream">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Client/\/usr\/lib\/jvm\/jdk1.8.0_121\/jre\/lib\/rt.jar&lt;java.io(FileInputStream.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="woo.java" tooltip="WhatWhat/src/woo/woo.java">
-<persistable path="/WhatWhat/src/woo/woo.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="PulseAudioSourceDataLine.class" tooltip="org.classpath.icedtea.pulseaudio.PulseAudioSourceDataLine">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Client/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/ext\/icedtea-sound.jar&lt;org.classpath.icedtea.pulseaudio(PulseAudioSourceDataLine.class"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="SocketInputStream.class" tooltip="java.net.SocketInputStream">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Client/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.net(SocketInputStream.class"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="PulseAudioDataLine.class" tooltip="org.classpath.icedtea.pulseaudio.PulseAudioDataLine">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Client/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/ext\/icedtea-sound.jar&lt;org.classpath.icedtea.pulseaudio(PulseAudioDataLine.class"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="StreamDecoder.class" tooltip="sun.nio.cs.StreamDecoder">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Client/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;sun.nio.cs(StreamDecoder.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Position.java" tooltip="PlayClient/src/Position.java">
+<persistable path="/PlayClient/src/Position.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="BufferedReader.class" tooltip="java.io.BufferedReader">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Client/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.io(BufferedReader.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayClient.java" tooltip="PlayClient/src/PlayClient.java">
+<persistable path="/PlayClient/src/PlayClient.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServerProtocol.java" tooltip="Server/src/launchServerWithContent/ServerProtocol.java">
-<persistable path="/Server/src/launchServerWithContent/ServerProtocol.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AePlayWave.java" tooltip="PlayClient/src/AePlayWave.java">
+<persistable path="/PlayClient/src/AePlayWave.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServerThread.java" tooltip="Server/src/launchServerWithContent/ServerThread.java">
-<persistable path="/Server/src/launchServerWithContent/ServerThread.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="SocketOutputStream.class" tooltip="java.net.SocketOutputStream">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Client/\/usr\/lib\/jvm\/java-8-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.net(SocketOutputStream.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LaunchClient.java" tooltip="Client/src/clientLauncher/LaunchClient.java">
-<persistable path="/Client/src/clientLauncher/LaunchClient.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AePlayWave.java" tooltip="Client/src/AePlayWave.java">
+<persistable path="/Client/src/AePlayWave.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExtendedLauncher.java" tooltip="Client/src/clientLauncher/ExtendedLauncher.java">
-<persistable path="/Client/src/clientLauncher/ExtendedLauncher.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="musicFile.wav" tooltip="Client/musicFile.wav">
+<persistable path="/Client/musicFile.wav"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServerLauncher.java" tooltip="Server/src/launchServerWithContent/ServerLauncher.java">
-<persistable path="/Server/src/launchServerWithContent/ServerLauncher.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AudioUtil.java" tooltip="Server/src/launchServerWithContent/AudioUtil.java">
+<persistable path="/Server/src/launchServerWithContent/AudioUtil.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="ServerResponses.txt" tooltip="Client/ServerResponses.txt">
-<persistable path="/Client/ServerResponses.txt"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RDPPlayAudioBytes.java" tooltip="Client/src/clientLauncher/RDPPlayAudioBytes.java">
+<persistable path="/Client/src/clientLauncher/RDPPlayAudioBytes.java"/>
 </file>
 </mruList>
 </workbench>
