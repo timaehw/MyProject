@@ -1,0 +1,8 @@
+package clientLauncher;
+public class LaunchClient {
+	static ExtendedLauncher ext;
+	public static void main(String[] args) {
+        ext = new ExtendedLauncher();
+	}
+}
+
