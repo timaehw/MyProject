@@ -9,14 +9,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintWriter;
-import java.net.Socket;
-
-import com.xuggle.xuggler.demos.DecodeAndPlayAudioAndVideo;
+ import java.net.Socket;
 public class ServerThread extends Thread {
     private Socket socket = null;
 	private OutputStream oos;
-	DecodeAndPlayVideo DAPAAV;
-	String vidURL = "/home/timmeh/workspace/Server/src/vid.mp4"; 
+ 	String vidURL = "/home/timmeh/workspace/Server/src/vid.mp4"; 
      public ServerThread(Socket socket) {
         super("ServerThread");
         this.socket = socket;
@@ -28,7 +25,6 @@ public class ServerThread extends Thread {
                 new InputStreamReader(
                     socket.getInputStream()));
         ) {
-    		
             String inputLine, outputLine;
             ServerProtocol srv = new ServerProtocol(socket);
             outputLine = srv.processInput(null);
@@ -61,8 +57,8 @@ public class ServerThread extends Thread {
 		        	fis.close();
 		        	oos.close();
   				}if(outputLine.equalsIgnoreCase("Streaming")){
-  					DAPAAV = new DecodeAndPlayVideo(vidURL);
-  					DAPAAV.run();
+  					new DecodeAndPlayVideo();
+					DecodeAndPlayVideo.main(null);
   				}
                 if (outputLine.equals("Bye.")){
                     break;
