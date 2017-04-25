@@ -1,5 +1,5 @@
 # MyProject
 
 ##############################
-# Video Stream using Xabber. #
+# Video Stream using Xuggler. #
 ##############################
